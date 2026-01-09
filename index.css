@@ -78,3 +78,60 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* My Setting for My Site*/
+
+/* remove animations for people who may have them turned off */
+@media (prefers-reduced-motion: ) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iterations-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Center the Header*/
+h1 {
+	text-align: center;
+}
+
+/* Body settings*/
+body {
+	background-color: tomato;
+}
+
+
+/* --------------- */
+/* Utility Classes */
+/* --------------- */
+
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+
+.grid {
+	display: grid;
+	gap: var(--gap, 1rem);
+}
+
+.contrainer {
+	padding-inline: 2em;
+	margin-inline: auto;
+	max-width: 80rem;
+	
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
