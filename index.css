@@ -99,7 +99,13 @@ h1 {
 
 /* Body settings*/
 body {
-	background-color: tomato;
+	background-color: light-gray;
+}
+
+/* PDF Settings */
+.pdf {
+	width: 100%;
+	aspect-ratio: 4/3;
 }
 
 
